@@ -6,7 +6,7 @@ public class Anagrams {
     public static void main(String[] args) {
 
         String s1="Sharayu";
-        String s2="uHaraSy";
+        String s2="Tejas";
 
         boolean result=areAnagram(s1,s2);
         System.out.println("It's "+result);
