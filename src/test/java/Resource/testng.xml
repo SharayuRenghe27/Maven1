@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MixedExecutionSuite">
+
+    <!-- 6 classes in parallel -->
+    <test name="Parallel-Classes" parallel="classes" thread-count="6">
+        <classes>
+<!--            <class name="testcases.Class1"/>-->
+<!--            <class name="testcases.Class2"/>-->
+<!--            <class name="testcases.Class3"/>-->
+<!--            <class name="testcases.Class4"/>-->
+<!--            <class name="testcases.Class5"/>-->
+<!--            <class name="testcases.Class6"/>-->
+        </classes>
+    </test>
+
+    <!-- 4 classes sequentially -->
+    <test name="Sequential-Classes" parallel="false">
+        <classes>
+<!--            <class name="testcases.Class7"/>-->
+<!--            <class name="testcases.Class8"/>-->
+<!--            <class name="testcases.Class9"/>-->
+<!--            <class name="testcases.Class10"/>-->
+        </classes>
+    </test>
+
+</suite>
