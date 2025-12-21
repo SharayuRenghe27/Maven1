@@ -9,7 +9,7 @@ public class Anagrams {
         String s2="uHaraSy";
 
         boolean result=areAnagram(s1,s2);
-        System.out.println("It is an "+result);
+        System.out.println("It is an = "+result);
     }
 
     public static boolean areAnagram(String s1, String s2)
