@@ -8,15 +8,23 @@ public class FibonacciSeries {
         Scanner scanner=new Scanner(System.in);
         int no=scanner.nextInt();
 
-        int first=0, second=1;
-        for (int i=1;i<=no;++i)
-        {
+        printFibonaciSeries(no);
+
+    }
+
+    private static void printFibonaciSeries(int no){
+
+        int first=0, second=1, third=0;
+
+        for(int i=1; i<=no; i++){
+
             System.out.println(first);
-           int next=first+second;
+            third=first+second;
             first=second;
-            second=next;
+            second=third;
 
         }
+
 
     }
 }
